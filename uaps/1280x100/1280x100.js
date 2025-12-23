@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"1280x100_atlas_1", frames: [[0,0,1280,100],[0,102,1280,100],[0,204,1280,100],[0,306,1280,100],[0,408,1280,100],[0,510,1280,100],[0,612,1280,100],[0,714,1280,100],[0,816,1280,100],[0,918,1280,100]]}
+		{name:"1280x100_atlas_1", frames: [[0,0,583,560],[585,0,1280,100],[585,102,1280,100],[585,204,1280,100],[585,306,1280,100],[585,408,1280,100],[585,510,1280,100],[0,612,1280,100],[0,714,1280,100],[0,816,1280,100]]}
 ];
 
 
@@ -27,28 +27,28 @@ lib.ssMetadata = [
 
 
 
-(lib.HaymondLF_0000s_0000_GradientFill1 = function() {
+(lib.EditedHeadshotPaige = function() {
 	this.initialize(ss["1280x100_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.HaymondLF_0000s_0000s_0000_LEARNMOREpngcopy = function() {
+(lib.HaymondLF_0000s_0000_GradientFill1 = function() {
 	this.initialize(ss["1280x100_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.HaymondLF_0000s_0000s_0001_Rectangle2copypngcopy = function() {
+(lib.HaymondLF_0000s_0000s_0000_LEARNMOREpngcopy = function() {
 	this.initialize(ss["1280x100_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.HaymondLF_0000s_0001_JohnHaymond = function() {
+(lib.HaymondLF_0000s_0000s_0001_Rectangle2copypngcopy = function() {
 	this.initialize(ss["1280x100_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -90,7 +90,7 @@ lib.ssMetadata = [
 
 
 
-(lib.HaymondLF_0000s_0003_home_banner_bg = function() {
+(lib.HaymondLF_0002s_0001_JohnHaymond = function() {
 	this.initialize(ss["1280x100_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -255,20 +255,28 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(240));
 
 	// Layer_1
-	this.instance_4 = new lib.HaymondLF_0000s_0000_GradientFill1();
+	this.instance_4 = new lib.EditedHeadshotPaige();
+	this.instance_4.setTransform(747,-5,0.1893,0.1893);
 
-	this.instance_5 = new lib.HaymondLF_0000s_0001_JohnHaymond();
+	this.instance_5 = new lib.HaymondLF_0002s_0001_JohnHaymond();
+	this.instance_5.setTransform(-5,-7);
 
-	this.instance_6 = new lib.HaymondLF_0000s_0002_logo();
+	this.instance_6 = new lib.HaymondLF_0000s_0000_GradientFill1();
+	this.instance_6.setTransform(0,1);
 
-	this.instance_7 = new lib.HaymondLF_0000s_0003_home_banner_bg();
+	this.instance_7 = new lib.HaymondLF_0000s_0002_logo();
+	this.instance_7.setTransform(0,1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]}).wait(240));
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#14314F").s().p("EhknAIwIAAxfMDJPAAAIAARfg");
+	this.shape.setTransform(643.975,56.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]}).wait(240));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(610.6,50,758.9,50.099999999999994);
+p.nominalBounds = new cjs.Rectangle(610.6,43,758.9,69.1);
 // library properties:
 lib.properties = {
 	id: 'DEFE22DC9BA34CA6948CD485B591E201',
